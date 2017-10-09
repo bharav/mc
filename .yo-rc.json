@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.2.0",
+    "libraryName": "mc-o-365-web-parts",
+    "libraryId": "4d4d3a88-b6bd-4fc8-b1e6-6780fe25f8ae",
+    "environment": "spo"
+  }
+}

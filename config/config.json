@@ -1,0 +1,26 @@
+{
+  "version": "2.0",
+  "bundles": {
+    "mc-new-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/mcNew/McNewWebPart.js",
+          "manifest": "./src/webparts/mcNew/McNewWebPart.manifest.json"
+        }
+      ]
+    },
+    "mc-stock-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/mcStock/McStockWebPart.js",
+          "manifest": "./src/webparts/mcStock/McStockWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "McNewWebPartStrings": "lib/webparts/mcNew/loc/{locale}.js",
+    "McStockWebPartStrings": "lib/webparts/mcStock/loc/{locale}.js"
+  }
+}

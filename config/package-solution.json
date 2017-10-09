@@ -1,0 +1,12 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "mc-o-365-web-parts-client-side-solution",
+    "id": "4d4d3a88-b6bd-4fc8-b1e6-6780fe25f8ae",
+    "version": "1.0.0.0",
+    "skipFeatureDeployment": true
+  },
+  "paths": {
+    "zippedPackage": "solution/mc-o-365-web-parts.sppkg"
+  }
+}
