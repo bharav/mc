@@ -38,48 +38,9 @@ export default class McStock extends React.Component<IMcStockProps, IMcStockStat
             type: "GET",
             headers: {'Accept': 'application/json; odata=verbose;'},
             success: function (resultData){
-                //  debugger;
-                //     if (!jquery.trim(resultData)){   
-                //         alert("What follows is blank: " + resultData);
-                //     }
-                //     else{ 
-                //         alert("What follows is not blank: " + resultData);  
-                //         alert("What follows is not blank: " + resultData);
-                //     }
                 reacthandler.setState({
                     items: resultData
-                });
-                
-                ///POST QUERY
-                // jquery.ajax({
-                // url: `https://m365x620367.sharepoint.com/_api/web/lists/GetByTitle('StockList')/items`,
-                // type:'POST',
-                // data: JSON.stringify
-                // ({
-                //     _metadata:
-                //     {
-                //         type: "SP.Data.TestListItem"
-                //     },
-                //     AssetName: resultData.AssetName,
-                //     todaysPrice:resultData.todaysPrice,
-                //     priceDifference:resultData.priceDifference
-                // }),
-                // headers:
-                // {
-                //     "Accept": "application/json;odata=verbose",  
-                //     "Content-Type": "application/json;odata=verbose",  
-                //     "X-RequestDigest": jquery("#__REQUESTDIGEST").val(),  
-                //     "X-HTTP-Method": "POST" 
-                // },
-                // success: function()
-                // {
-                //     debugger;
-                //     console.log("Items added");
-                // },
-                // error: function(jqXHR, textStatus, errorThrown){
-
-                // }
-                // });
+                });               
             },
             error : function(jqXHR, textStatus, errorThrown){
 
