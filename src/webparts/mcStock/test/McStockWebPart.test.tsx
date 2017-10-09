@@ -82,11 +82,6 @@ describe('<McStock />',() =>{
      setTimeout( () => {
          try{
             expect(renderedElement.state('items')).deep.equal(myItem);
-            //expect(renderedElement.state('items')).should.include.something.that.deep.equals()
-        // var elm = shallow(<SplistItems description={descTxt}/>).state('items').find('div').length;
-        //     return expect(elm).to.eventually.be.an('array')
-        //     .that.contains.something.with.property('AssetName','todaysPrice');
-        //expect(renderedElement.state('items')).should.be.an('array').that.contains.something.with
             done();
          }
         catch(e){
@@ -102,11 +97,6 @@ describe('<McStock />',() =>{
      setTimeout( () => {
          try{
             expect(renderedElement.state('items')).deep.members(myItem);
-            //expect(renderedElement.state('items')).should.include.something.that.deep.equals()
-        // var elm = shallow(<SplistItems description={descTxt}/>).state('items').find('div').length;
-        //     return expect(elm).to.eventually.be.an('array')
-        //     .that.contains.something.with.property('AssetName','todaysPrice');
-        //expect(renderedElement.state('items')).should.be.an('array').that.contains.something.with
             done();
          }
         catch(e){
