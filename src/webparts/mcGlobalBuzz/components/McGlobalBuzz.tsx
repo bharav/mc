@@ -24,7 +24,7 @@ export default class McGlobalBuzz extends React.Component<IMcGlobalBuzzProps, IM
         var reacthandler = this;
         jquery.ajax({
             type: "GET",
-            url: `${this.props.siteUrl}/_api/search/query?querytext=%27ContentTypeId:0x01100059FA0D78CBE0804585D556912997D01C%27&selectproperties=%27Title,Author,PublishedDate%27`,
+            url: `${this.props.siteUrl}/_api/search/query?querytext=%27ContentTypeId:0x01100059FA0D78CBE0804585D556912997D01C%27&selectproperties=%27Title,Author,ID,PublishedDate%27`,
             headers:{'Accept': 'application/json; odata=verbose;'},    
             success: function (resultData){
                 debugger;
